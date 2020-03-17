@@ -1,0 +1,94 @@
+&.small {
+
+  /*Home Page Css Start*/
+  .#{$magic-namespace}-homescreen-wrapper {
+    .#{$magic-namespace}-homescreen-wrapper-inner {
+      padding: 62px 0;
+
+      .#{$magic-namespace}-player-wrapper {
+        .#{$magic-namespace}-player {
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+
+  /*Home Page Css End*/
+  /*Activity Dashboard css Start*/
+  .#{$magic-namespace}-dashboard-wrapper {
+    .#{$magic-namespace}-cellWrapper {
+      .#{$magic-namespace}-cell-box {
+        width: 242px;
+        height: 190px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  /*Activity Dashboard css End*/
+
+  /*Activity One css Start*/
+  .#{$magic-namespace}-activity-header {
+    padding: 8px 5px 8px 8px;
+    position: relative;
+    // top: -9px;
+
+    .#{$magic-namespace}-back-home-box {
+      button {
+        display: inline-block;
+        width: 41px;
+        height: 43px;
+        border: none;
+        border-radius: 0;
+        margin-right: 8px;
+        cursor: pointer;
+        border: none;
+
+        &.#{$magic-namespace}-back {
+          background: url('./../assets//images/icon0001.png') no-repeat center center/contain;
+        }
+
+        &.#{$magic-namespace}-home {
+          background: url('./../assets//images/icon0004.png') no-repeat center center/contain;
+        }
+      }
+    }
+
+    .#{$magic-namespace}-title-box {
+      float: right;
+      width: 206px;
+      height: 60px;
+      background: url('./../assets//images/title_bar.png') no-repeat center center/contain;
+      text-align: center;
+      top: -9px;
+      position: relative;
+
+      .#{$magic-namespace}-label-text {
+        // font-size: 22px;
+        color: #fff;
+        text-shadow: 0 0 2px #761C28;
+        margin: 0;
+        padding: 0;
+        line-height: 46px;
+      }
+
+      .#{$magic-namespace}-music-icon {
+        width: 42px;
+        height: 42px;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        background: #d8d8d8;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+&.small.landscape {
+  /* add responisve related style here */
+}
+
+&.small.portrait {
+  /* add responisve related style here */
+}

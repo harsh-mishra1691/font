@@ -1,0 +1,171 @@
+.#{$magic-namespace}-activity-summary-container {
+	height: 100%;
+	background: #082430;
+
+	.#{$magic-namespace}-activity-summary-container-inner {
+		height: 100%;
+
+		&.noneTheme {
+			.#{$magic-namespace}-activity-header {
+				.#{$magic-namespace}-back {
+					background: url('./../assets/images/icon0003.png') no-repeat center center/contain !important;
+				}
+
+				.#{$magic-namespace}-home {
+					background: url('./../assets/images/icon0006.png') no-repeat center center/contain !important;
+				}
+			}
+
+
+		}
+
+		&.taylorTheme {
+			.#{$magic-namespace}-activity-header {
+				.#{$magic-namespace}-back {
+					background: url('./../assets/images/icon0002.png') no-repeat center center/contain !important;
+				}
+
+				.#{$magic-namespace}-home {
+					background: url('./../assets/images/icon0005.png') no-repeat center center/contain !important;
+				}
+			}
+
+
+
+		}
+
+		&.bakerTheme {
+			.#{$magic-namespace}-activity-header {
+				.#{$magic-namespace}-back {
+					background: url('./../assets/images/icon0001.png') no-repeat center center/contain !important;
+				}
+
+				.#{$magic-namespace}-home {
+					background: url('./../assets/images/icon0004.png') no-repeat center center/contain !important;
+				}
+			}
+
+
+
+		}
+
+		.#{$magic-namespace}-summary-page {
+			position: relative;
+			height: 100%;
+
+			.#{$magic-namespace}-feedback-audio-wrapper {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+			}
+
+			.#{$magic-namespace}-summary-heading {
+				// background: #d41576;
+				// padding: 8px 15px;
+
+				.#{$magic-namespace}-activity-header {
+					max-width: 1390px;
+					width: 100%;
+					margin: 0 auto;
+
+					.#{$magic-namespace}-back-home-box {
+						button {
+							display: inline-block;
+							width: 41px;
+							height: 43px;
+							border: none;
+							border-radius: 0;
+							margin-right: 13px;
+							cursor: pointer;
+							border: none;
+						}
+					}
+
+				}
+			}
+
+
+
+			// .#{$magic-namespace}-upper-start {
+			// 	// height: 140px;
+			// 	// background: url('./../assets//images/stars_top.png') no-repeat left bottom/cover;
+
+			// }
+
+			.#{$magic-namespace}-lower-end {
+				height: 120px;
+				background: url('./../assets//images/stars_bottom.png') no-repeat left top/cover;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				bottom: 0;
+				background-size: contain;
+				background-repeat: repeat;
+				opacity: 0.6;
+			}
+
+			.#{$magic-namespace}-summary-info {
+				background: #d41576;
+				padding: 16px 0;
+				margin-top: 20px;
+				text-align: center;
+				// margin-top: -70px;
+
+				span {
+					display: block;
+					font-size: 26px;
+					margin: 0 0 10px;
+					color: #fff;
+					font-family: 'NunitoBold';
+				}
+
+				strong {
+					display: block;
+					margin: 0;
+					color: #fff;
+					font-size: 30px;
+					font-family: 'NunitoExtraBold';
+				}
+
+			}
+
+			// .#{$magic-namespace}-background {
+
+			// 	height: 60px;
+			// }
+
+			.#{$magic-namespace}-star-sec {
+				height: calc(100% - 317px);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.#{$magic-namespace}-star-animation {
+					width: 308px;
+					height: 199px;
+					background: url('./../assets//images/5starnim/sprite.png') no-repeat left center;
+					animation: starplay 2s steps(34);
+					margin: 0 auto;
+					animation-fill-mode: forwards;
+					-webkit-animation-fill-mode: forwards;
+					-moz-animation-fill-mode: forwards;
+					position: relative;
+					z-index: 99;
+				}
+			}
+		}
+	}
+}
+
+@keyframes starplay {
+	from {
+		background-position: 0;
+	}
+
+	to {
+		background-position: -10472px;
+	}
+}

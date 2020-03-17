@@ -1,0 +1,732 @@
+&.large {}
+
+
+
+&.large.landscape {
+
+  .#{$magic-namespace}-activity-summary-container {
+    .#{$magic-namespace}-activity-summary-container-inner {
+      .#{$magic-namespace}-summary-page {
+        .#{$magic-namespace}-summary-heading {
+          .#{$magic-namespace}-activity-header {
+            .#{$magic-namespace}-back-home-box {
+              button {
+                width: 72px;
+                height: 76px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .#{$magic-namespace}-star-sec {
+          .#{$magic-namespace}-star-animation {
+            width: 418px;
+            height: 266px;
+            background: url('./../assets/images/ipadDevice/general/5star_anim/sprite.png') no-repeat left center;
+            animation: largeScreenstarplay 2s steps(34) forwards;
+          }
+        }
+      }
+
+      &.noneTheme {
+        .#{$magic-namespace}-activity-header {
+          .#{$magic-namespace}-back {
+            background: url('./../assets/images/ipadDevice/general/ions0006.png') no-repeat center center/contain !important;
+          }
+
+          .#{$magic-namespace}-home {
+            background: url('./../assets/images/ipadDevice/general/ions0005.png') no-repeat center center/contain !important;
+          }
+        }
+      }
+
+      &.taylorTheme {
+        .#{$magic-namespace}-activity-header {
+          .#{$magic-namespace}-back {
+            background: url('./../assets/images/ipadDevice/general/ions0004.png') no-repeat center center/contain !important;
+          }
+
+          .#{$magic-namespace}-home {
+            background: url('./../assets/images/ipadDevice/general/ions0003.png') no-repeat center center/contain !important;
+          }
+        }
+      }
+
+      &.bakerTheme {
+        .#{$magic-namespace}-activity-header {
+          .#{$magic-namespace}-back {
+            background: url('./../assets/images/ipadDevice/general/icons0002.png') no-repeat center center/contain !important;
+          }
+
+          .#{$magic-namespace}-home {
+            background: url('./../assets/images/ipadDevice/general/icons0001.png') no-repeat center center/contain !important;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  /*Home Screen*/
+  .#{$magic-namespace}-homescreen-wrapper {
+    .#{$magic-namespace}-home-content-wrapper {
+      .#{$magic-namespace}-heading-wrapper {
+        height: calc(100% - 366px);
+      }
+    }
+
+    .#{$magic-namespace}-homescreen-wrapper-inner {
+      padding-top: 76px;
+
+      &.bakerTheme {
+        .#{$magic-namespace}-musicIcon {
+          background: url('./../assets/images/ipadDevice/general/audio_main0001.png') no-repeat center center/contain;
+        }
+      }
+
+      &.taylorTheme {
+        .#{$magic-namespace}-musicIcon {
+          background: url('./../assets/images/ipadDevice/general/audio_main0003.png') no-repeat center center/contain;
+        }
+      }
+
+      &.noneTheme {
+        .#{$magic-namespace}-musicIcon {
+          background: url('./../assets/images/ipadDevice/general/audio_main0005.png') no-repeat center center/contain;
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        padding: 17px 12px;
+        margin-bottom: 38px;
+      }
+
+      h2 {
+        font-size: 52px;
+
+        span {
+          display: inline-block;
+        }
+      }
+
+      .#{$magic-namespace}-musicIcon {
+        top: 13px;
+        right: 13px;
+        height: 50px;
+        width: 50px;
+      }
+
+      .#{$magic-namespace}-select-player {
+        bottom: 35px;
+      }
+
+      .#{$magic-namespace}-player-wrapper {
+        .#{$magic-namespace}-player {
+          margin: 0 17px;
+        }
+
+        .#{$magic-namespace}-baker {
+          &.activeCharacter {
+            &:after {
+              background: url('./../assets/images/ipadDevice/general/button_set20001.png') no-repeat center center/contain;
+              top: -26px;
+              height: 185px;
+            }
+
+            &:before {
+              font-size: 26px;
+            }
+          }
+        }
+
+        .#{$magic-namespace}-taylor {
+          &.activeCharacter {
+            &:after {
+              background: url('./../assets/images/ipadDevice/general/button_set20002.png') no-repeat center center/contain;
+              top: -26px;
+              height: 185px;
+            }
+
+            &:before {
+              font-size: 26px;
+            }
+          }
+        }
+
+        .#{$magic-namespace}-none {
+          &.activeCharacter {
+            &:after {
+              background: url('./../assets/images/ipadDevice/general/button_set20003.png') no-repeat center center/contain;
+              top: -26px;
+              height: 185px;
+            }
+
+            &:before {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+
+      .#{$magic-namespace}-player-wrapper {
+        .#{$magic-namespace}-player {
+          img {
+            width: 96px;
+            height: 110px;
+          }
+        }
+      }
+
+      .#{$magic-namespace}-select-player {
+        .#{$magic-namespace}-player-cell {
+          width: 250px;
+          height: 266px;
+
+          span {
+            font-size: 46px;
+            left: 96px;
+            bottom: 25px;
+
+            &.read {
+              left: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*Dashboard Screen*/
+  .#{$magic-namespace}-dashboard-wrapper {
+    .#{$magic-namespace}-uppericon {
+      top: 14px;
+      padding: 0 14px;
+
+      &.noneTheme {
+        .#{$magic-namespace}-backicon {
+          background: url('./../assets/images/ipadDevice/general/ions0006.png') no-repeat center center/contain;
+        }
+
+        .#{$magic-namespace}-music {
+          background: url('./../assets/images/ipadDevice/general/audio_main0005.png') no-repeat center center/contain;
+        }
+      }
+
+      &.taylorTheme {
+        .#{$magic-namespace}-backicon {
+          background: url('./../assets/images/ipadDevice/general/ions0004.png') no-repeat center center/contain;
+        }
+
+        .#{$magic-namespace}-music {
+          background: url('./../assets/images/ipadDevice/general/audio_main0003.png') no-repeat center center/contain;
+        }
+      }
+
+      &.bakerTheme {
+        .#{$magic-namespace}-backicon {
+          background: url('./../assets/images/ipadDevice/general/icons0002.png') no-repeat center center/contain;
+        }
+
+        .#{$magic-namespace}-music {
+          background: url('./../assets/images/ipadDevice/general/audio_main0001.png') no-repeat center center/contain;
+        }
+
+      }
+
+      .#{$magic-namespace}-backicon {
+        width: 72px;
+        height: 76px;
+      }
+
+      .#{$magic-namespace}-music {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .#{$magic-namespace}-player-icon {
+      width: 110px;
+      height: 141px;
+    }
+
+    .#{$magic-namespace}-player-wrapper {
+      height: calc(100% - 263px);
+
+      .#{$magic-namespace}-player-wrapper-inner {
+        .#{$magic-namespace}-dashboard-heading-warpper {
+          height: calc(100% - 142px);
+
+          h2 {
+            font-size: 60px;
+
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    .#{$magic-namespace}-cellWrapper {
+      bottom: 68px;
+
+      .#{$magic-namespace}-cell-box {
+        width: 242px;
+        height: 190px;
+      }
+    }
+  }
+
+  /*Activity Screen*/
+
+  .#{$magic-namespace}-activity-wrapper {
+    &.none {
+      background: url('./../assets/images/ipadDevice/general/bg3.png') no-repeat center center/cover;
+    }
+
+    &.taylor {
+      background: url('./../assets/images/ipadDevice/general/bg2.png') no-repeat center center/cover;
+    }
+
+    &.baker {
+      background: url('./../assets/images/ipadDevice/general/bg1.png') no-repeat center center/cover;
+    }
+
+    .#{$magic-namespace}-activity2-wrapper {
+      .#{$magic-namespace}-activity2-container {
+        .feedbackContainer {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          z-index: 9999;
+
+          background: #082430;
+
+
+          .feedbackContainer-inner {
+
+            height: calc(100% - 89px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .feedbackContainer-inner-animation {
+              width: 100%;
+
+              .#{$magic-namespace}-star {
+                width: 320px;
+                height: 226px;
+                margin: 0 auto 25px;
+                background: url('./../assets/images/ipadDevice/general/goodjob_mascot0001.png') no-repeat center center/contain;
+              }
+
+              .#{$magic-namespace}-good-job {
+                width: 375px;
+                height: 152px;
+                background: url('./../assets/images/ipadDevice/general/goodjob.png') no-repeat center center/contain;
+                margin: 0 auto;
+              }
+
+
+            }
+
+            .#{$magic-namespace}-lower-end {
+
+              background: url('./../assets/images/ipadDevice/general/star_bottom.png') no-repeat left top/cover;
+              background-size: contain;
+              background-repeat-x: repeat;
+              height: 137px;
+              background-position: left 7px;
+
+            }
+          }
+
+        }
+      }
+    }
+
+    .#{$magic-namespace}-activity-header {
+      position: relative;
+
+      .#{$magic-namespace}-title-box {
+        width: 248px;
+        height: 70px;
+        background: url('./../assets/images/ipadDevice/general/titlebar.png') no-repeat center center/contain;
+        top: -12px;
+      }
+
+      padding: 13px 13px 8px;
+
+      .#{$magic-namespace}-back-home-box {
+        button {
+          width: 72px;
+          height: 76px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .#{$magic-namespace}-activity1-wrapper {
+
+      .#{$magic-namespace}-answer-panner-wrapper {
+        height: calc(100% - 152px);
+
+        .#{$magic-namespace}-question-answer-panel {
+          .#{$magic-namespace}-question-container {
+            width: 210px;
+            margin-right: 50px;
+
+            figure {
+              height: 210px;
+            }
+
+            .#{$magic-namespace}-image-description {
+              span {
+                font-size: 28px;
+                border-radius: 30px;
+              }
+            }
+          }
+
+          .#{$magic-namespace}-answer-container {
+            width: 210px;
+
+            figure {
+              height: 210px;
+            }
+
+            .#{$magic-namespace}-blank-description {
+              height: 56px;
+              border-radius: 30px;
+            }
+          }
+        }
+      }
+
+      .#{$magic-namespace}-activity1-container {
+        .#{$magic-namespace}-questionTitle {
+          padding: 13px 35px;
+          height: 60px;
+          text-align: center;
+
+          h5,
+          .#{$magic-namespace}-music-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            position: static;
+            margin: 0 5px;
+            padding: 0;
+            font-size: 24px;
+          }
+        }
+      }
+
+
+
+      .#{$magic-namespace}-options-panel {
+        bottom: 66px;
+        left: 0;
+        width: 100%;
+        padding: 38px 10px;
+
+
+        ul {
+          max-width: 100%;
+
+          li {
+
+            width: 180px;
+            margin: 0 30px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &.hide-option {
+              button {
+                font-size: 0;
+              }
+            }
+
+            button {
+              font-size: 28px;
+              padding: 8px 10px;
+
+            }
+          }
+        }
+      }
+    }
+
+    .#{$magic-namespace}-activity2-wrapper {
+      .#{$magic-namespace}-activity2-container {
+        .#{$magic-namespace}-questionTitle {
+          padding: 13px 35px;
+          height: 60px;
+          text-align: center;
+
+          h5,
+          .#{$magic-namespace}-music-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            position: static;
+            margin: 0 5px;
+            padding: 0;
+            font-size: 24px;
+          }
+        }
+
+        .#{$magic-namespace}-question-answers-wrapper {
+          height: calc(100% - 105px);
+
+          .#{$magic-namespace}-question-answers-wrapper-inner {
+            .#{$magic-namespace}-answers-container {
+
+
+              .answer-elements {
+                width: 60px;
+                height: 60px;
+                margin: 0 8px;
+
+                &.text-filled {
+                  span {
+                    line-height: 57px;
+                  }
+                }
+              }
+            }
+
+            .#{$magic-namespace}-question-container {
+              width: 270px;
+              height: 270px;
+              margin-bottom: 28px;
+            }
+
+            .magic-bt-poc-options-container {
+              .options-hidden-container {
+                width: 60px;
+                height: 60px;
+                margin: 0 8px;
+
+                .option-elements {}
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .#{$magic-namespace}-activity3-wrapper {
+      .#{$magic-namespace}-activity3-container {
+
+        .#{$magic-namespace}-questionTitle {
+          padding: 13px 35px;
+          height: 60px;
+          text-align: center;
+
+          h5,
+          .#{$magic-namespace}-music-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            position: static;
+            margin: 0 5px;
+            padding: 0;
+            font-size: 24px;
+          }
+        }
+
+        .#{$magic-namespace}-question-option-panel {
+          border-radius: 40px;
+
+          .#{$magic-namespace}-question-option-panel-inner {
+            .#{$magic-namespace}-question-panel {
+              font-size: 36px;
+              padding: 10px 30px;
+              margin: 0 auto 50px;
+            }
+          }
+        }
+
+        .#{$magic-namespace}-question-option-panel {
+          height: calc(100% - 102px);
+
+          .#{$magic-namespace}-question-option-panel-inner {
+            .#{$magic-namespace}-options-panel {
+              padding: 45px 0;
+              background: #89B23F;
+
+              ul {
+                li {
+                  width: 190px;
+                  height: 190px;
+                  margin: 0 19px;
+                  transform: rotate(-6deg);
+                  -webkit-transform: rotate(-6deg);
+                  -moz-transform: rotate(-6deg);
+                  -o-transform: rotate(-6deg);
+
+                  &:nth-child(2n) {
+                    transform: rotate(6deg);
+                    -webkit-transform: rotate(6deg);
+                    -moz-transform: rotate(6deg);
+                    -o-transform: rotate(6deg);
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .#{$magic-namespace}-activity4-wrapper {
+      .#{$magic-namespace}-question-option-wrapper {
+        height: calc(100% - 107px);
+      }
+
+      .#{$magic-namespace}-activity4-container {
+        .#{$magic-namespace}-options-container {
+          width: 100%;
+          height: 190px;
+          text-align: center;
+          padding: 22px 0;
+          background: #89B23F;
+
+          .option-elements {
+            width: 160px;
+            height: 144px;
+          }
+        }
+
+        .#{$magic-namespace}-question-container {
+          .#{$magic-namespace}-options-container-wrapper {
+            width: 500px;
+
+            .answer-elements {
+              width: 154px;
+              height: 138px;
+
+              .answer-elements-inner {
+                span {
+
+                  width: 23px;
+                  height: 23px;
+                  font-size: 12px;
+                  line-height: 23px;
+                  top: -13px;
+
+                }
+              }
+            }
+          }
+        }
+
+        .#{$magic-namespace}-questionTitle {
+          padding: 13px 35px;
+          height: 60px;
+          text-align: center;
+
+          h5,
+          .#{$magic-namespace}-music-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            position: static;
+            margin: 0 5px;
+            padding: 0;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .rewards-container-wrapper {
+    max-width: 341px;
+    padding: 10px 32px;
+    border-radius: 30px;
+
+    .magic-bt-poc-activity-rewards-container {
+      .#{$magic-namespace}-star-list {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+          width: 39px;
+          height: 37px;
+
+          &.starElems {
+            background: url('./../assets/images/ipadDevice/general/star0003.png') no-repeat center center/contain;
+          }
+
+          &.currentStar {
+            background: url('./../assets/images/ipadDevice/general/star0002.png') no-repeat center center/contain;
+
+            &:after {
+
+              height: 2px;
+              bottom: -9px;
+
+            }
+          }
+
+          &.showSelectedStar {
+            background: url('./../assets/images/ipadDevice/general/star0001.png') no-repeat center center/contain;
+          }
+        }
+      }
+    }
+
+    .#{$magic-namespace}-activity-navigation-container {
+      button {
+        width: 40px;
+        height: 40px;
+
+        &.prevArrow {
+          background: url('./../assets/images/ipadDevice/general/back_next_activity0003.png') no-repeat center center/contain;
+          left: 3px;
+
+          &:active {
+            background: url('./../assets/images/ipadDevice/general/back_next_activity0004.png') no-repeat center center/contain;
+          }
+        }
+
+        &.nextArrow {
+          background: url('./../assets/images/ipadDevice/general/back_next_activity0001.png') no-repeat center center/contain;
+          right: 3px;
+
+          &:active {
+            background: url('./../assets/images/ipadDevice/general/back_next_activity0002.png') no-repeat center center/contain;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+&.large.portrait {
+  /* add responisve related style here */
+}
+
+@keyframes largeScreenstarplay {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -14212px;
+  }
+}

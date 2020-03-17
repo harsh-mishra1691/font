@@ -1,0 +1,96 @@
+@media (prefers-reduced-motion: reduce) {
+  button {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    animation: vibrate 0.3s linear infinite both;
+  }
+}
+
+& {
+  .placeholder {
+    background-color: #cccccc;
+    border: 1px #f23e3e dotted;
+
+    &:before {
+      font-size: 8px;
+      color: #333333;
+      content: "PLACEHOLDER";
+      word-wrap: break-word;
+    }
+  }
+}
+
+button:focus,
+button:active,
+button.active,
+button:focus:active {
+  background-image: none;
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -moz-tap-highlight-color: rgba(255, 255, 255, 0);
+  -o-tap-highlight-color: rgba(255, 255, 255, 0);
+  tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: block;
+  // height: 1%;
+
+  &:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+}
+
+* {
+  outline: none !important;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}

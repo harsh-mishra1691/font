@@ -1,0 +1,92 @@
+.mobile-landscape-container {
+
+	height: 100%;
+	position: relative;
+
+	&.noneTheme {
+		background: url('../assets/images/bg0003.png') no-repeat center center/cover;
+
+		.landscape-popup {
+			.popup-icon {
+
+				background: url('../assets/images/sad_mascot0003.png') no-repeat center center/contain;
+			}
+		}
+
+	}
+
+	&.taylorTheme {
+		background: url('../assets/images/bg0002.png') no-repeat center center/cover;
+
+		.landscape-popup {
+			.popup-icon {
+
+				background: url('../assets/images/sad_mascot0002.png') no-repeat center center/contain;
+			}
+		}
+	}
+
+	&.bakerTheme {
+		background: url('../assets/images/bg0001.png') no-repeat center center/cover;
+
+		.landscape-popup {
+			.popup-icon {
+
+				background: url('../assets/images/sad_mascot0001.png') no-repeat center center/contain;
+			}
+		}
+	}
+
+	.landscape-popup {
+		width: 370px;
+		height: 224px;
+		border: 5px solid #fff;
+		background: #082430;
+		border-radius: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+
+		.popup-icon {
+
+			width: 105px;
+			height: 135px;
+			position: absolute;
+			left: -39px;
+			top: -42px;
+
+		}
+
+		span {
+			font-size: 24px;
+			font-family: 'NunitoSemiBold';
+			color: #fff;
+			display: block;
+			text-align: center;
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
+		}
+
+		.rotateImage {
+			height: 145px;
+			width: 140px;
+			animation: play 0.8s steps(45) alternate-reverse infinite;
+			margin: 15px auto 0;
+			background: url('../assets/images/rotation_anim/sprite.png') left center;
+		}
+
+
+
+	}
+}
+
+@keyframes play {
+	100% {
+		background-position: -6300px;
+	}
+}

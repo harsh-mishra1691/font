@@ -1,0 +1,92 @@
+.rewards-container-wrapper {
+  max-width: 303px;
+  margin: 0 auto 26px;
+  position: relative;
+  padding: 4px 32px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 20px;
+
+  .#{$magic-namespace}-activity-navigation-container {
+    button {
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      font-size: 0;
+      border: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+
+      &.disableBtn {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      &.prevArrow {
+        background: url('./../assets//images/back_next_activity0003.png') no-repeat center center/contain;
+        left: 3px;
+
+        &:active {
+          background: url('./../assets//images/back_next_activity0004.png') no-repeat center center/contain;
+
+        }
+      }
+
+      &.nextArrow {
+        background: url('./../assets//images/back_next_activity0001.png') no-repeat center center/contain;
+        right: 3px;
+
+        &:active {
+          background: url('./../assets//images/back_next_activity0002.png') no-repeat center center/contain;
+        }
+      }
+    }
+  }
+
+  .#{$magic-namespace}-activity-rewards-container {
+    .#{$magic-namespace}-star-list {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+        width: 25px;
+        height: 24px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+        position: relative;
+
+        &.starElems {
+          background: url('./../assets/images/bar_stars0001.png') no-repeat center center/contain;
+        }
+
+        &.currentStar {
+          background: url('./../assets/images/bar_stars0002.png') no-repeat center center/contain;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            left: 0;
+            bottom: -4px;
+          }
+        }
+
+        &.showSelectedStar {
+          background: url('./../assets/images/bar_stars0003.png') no-repeat center center/contain;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

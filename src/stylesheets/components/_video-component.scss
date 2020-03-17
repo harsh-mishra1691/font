@@ -1,0 +1,31 @@
+.#{$magic-namespace}-videoContainer {
+	background: #333;
+	position: relative;
+	height: 100%;
+
+	.#{$magic-namespace}-play-btn {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		cursor: pointer;
+		z-index: 9999;
+		width: 91px;
+		height: 91px;
+		border: none;
+		background: url('./../assets//images/play_button_video0001.png') no-repeat center center/contain;
+
+		&:active {
+			background: url('./../assets//images/play_button_video0002.png') no-repeat center center/contain;
+		}
+	}
+
+	video {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+}

@@ -1,0 +1,234 @@
+$magic-namespace: "magic-bt-poc";
+
+/*Font Import*/
+@font-face {
+  font-family: 'Boogaloo';
+  src: url('fonts/Boogaloo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoBlack';
+  src: url('fonts/Nunito-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoBlackItalic';
+  src: url('fonts/Nunito-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoBold';
+  src: url('fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoBoldItalic';
+  src: url('fonts/Nunito-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoExtraBold';
+  src: url('fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoExtraBoldItalic';
+  src: url('fonts/Nunito-ExtraBolditalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoExtraLight';
+  src: url('fonts/Nunito-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoExtraLightItalic';
+  src: url('fonts/Nunito-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoLight';
+  src: url('fonts/Nunito-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoLightItalic';
+  src: url('fonts/Nunito-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoRegular';
+  src: url('fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoRegularItalic';
+  src: url('fonts/Nunito-RegularItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoSemiBold';
+  src: url('fonts/Nunito-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NunitoSemiBoldItalic';
+  src: url('fonts/Nunito-SemiBoldItalic.ttf') format('truetype');
+}
+
+
+
+
+.magic-bt-poc {
+  @import 'components/all';
+  @import 'responsive/all';
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+ box-sizing: border-box;
+}
+
+.welcome-modal-container {
+  height: 100%;
+    background: rgba(0,0,0,0.5);
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: none;
+}
+
+.side-bar-icon {
+  position: absolute;
+  top: 23px;
+  width: 30px;
+  height: 21px;
+  border-top: 3px solid #333;
+  right: 40px;
+  border-bottom: 3px solid #333;
+  cursor: pointer;
+  &:after{
+    position: absolute;
+    height: 3px;
+    background: #333;
+    content: "";
+    left: 0;
+    top: 6px;
+    width: 30px;
+  }
+}
+
+.magic-bt-poc-activity-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-container{
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.14);
+  color: rgba(0,0,0,.6);
+  font-size: 21px;
+  -webkit-box-shadow: 1px 1px transparent;
+    box-shadow: 1px 1px transparent;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    order:1;
+    position: fixed;
+}
+
+.fonts-list-container{
+  order:2;
+display: flex;
+width:100%;
+  
+  .fonts-list{
+    width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+    position: fixed;
+    top: 64px;
+  }
+  .selectedFontDetails_container{
+    width:calc(100% - 400px);
+    margin-left: 400px;
+    padding: 104px 30px;
+  }
+  .list-item{
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgba(0,0,0,.14);
+    padding: 22px 51px;
+  }
+}
+.side-bar-container{
+  
+  order:3;
+}
+
+.sideBarWrapper {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  padding: 100px 41px;
+  border-left: 1px solid rgba(0,0,0,.14);
+  height: 100%;
+    background: #fff;
+}
