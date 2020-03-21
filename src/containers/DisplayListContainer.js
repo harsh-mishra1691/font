@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import DisplayList from '../components/DisplayList';
-import { setResponseInStore, setWelcomeModal } from '../actions';
+import { setResponseInStore, setWelcomeModal, listToDisplay } from '../actions';
 
 
 const mapStateToProps = (state) => {
@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
   return {
     apiResponse: state.apiResponse,
     filtersData: state.filtersData,
+    displayList: state.displayList,
   };
 };
 
@@ -15,6 +16,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     setResponseInStore: (data) => {
       dispatch(setResponseInStore(data));
+    },
+    setDisplayList: (data) => {
+      dispatch(listToDisplay(data));
     },
     setWelcomeModal: (data) => {
       // dispatch(setWelcomeModal(data));

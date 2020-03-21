@@ -4,6 +4,7 @@ export const SET_CHARACTER = 'SET_CHARACTER';
 export const SET_RESPONSE = 'SET_RESPONSE';
 export const HIDE_WELCOME_MODAL = 'HIDE_WELCOME_MODAL';
 export const SORT_BY_FILTER = 'SORT_BY_FILTER';
+export const SET_LIST_DATA = 'SET_LIST_DATA';
 
 
 export const widthChange = (data) => {
@@ -20,6 +21,10 @@ export const setCharacter = (data) => {
 
 export const setResponseInStore = (data) => {
   return { type: SET_RESPONSE, data };
+};
+
+export const listToDisplay = (data) => {
+  return { type: SET_LIST_DATA, data };
 };
 
 export const setWelcomeModal = (data) => {

@@ -8,6 +8,7 @@ import {
   SET_RESPONSE,
   HIDE_WELCOME_MODAL,
   SORT_BY_FILTER,
+  SET_LIST_DATA,
 } from './actions';
 // import { stat } from 'fs';
 
@@ -47,6 +48,15 @@ function apiResponse(state = '', action) {
   }
 }
 
+function displayList(state = '', action) {
+  switch (action.type) {
+    case SET_LIST_DATA:
+      return action.data;
+    default:
+      return state;
+  }
+}
+
 function showWelcomeModal(state = true, action) {
   switch (action.type) {
     case HIDE_WELCOME_MODAL:
@@ -72,6 +82,7 @@ const reducers = combineReducers({
   apiResponse,
   showWelcomeModal,
   filtersData,
+  displayList,
 });
 
 export default reducers;

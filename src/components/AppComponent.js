@@ -15,8 +15,8 @@ class AppComponent extends React.Component {
     console.log('show modal>', showWelcomeModal);
     return (
       // eslint-disable-next-line
-      <div className="magic-bt-poc-app-wrapper">
-        <div className="magic-bt-poc-activity-container">
+      <div className="poc-app-wrapper">
+        <div className="poc-activity-container">
           <Header />
           <DisplayListContainer />
           {showWelcomeModal && <WelcomeModal />}
