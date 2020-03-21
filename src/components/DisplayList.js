@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import configData from '../data/index';
 
@@ -9,6 +10,7 @@ class DisplayList extends React.Component {
     this.state = {
       selectedFont: '',
     };
+    this.filtersData = props.filtersData;
     this.getAPIData = this.getAPIData.bind(this);
     this.showSelectedFont = this.showSelectedFont.bind(this);
     this.apiUrl = configData.apiUrl;
@@ -25,6 +27,16 @@ class DisplayList extends React.Component {
     //   alert("HTTP-Error: " + response.status);
     // }
     this.getAPIData('', true);
+  }
+
+  componentWillReceiveProps(newProps, oldProps) {
+    console.log(newProps.filtersData, oldProps.filtersData);
+    if (newProps.filtersData !== this.filtersData) {
+      console.log('filterdata', oldProps.filtersData, newProps.filtersData);
+      const queryParam = '&sort=' + newProps.filtersData;
+      this.getAPIData(queryParam);
+      this.filtersData = newProps.filtersData;
+    }
   }
 
   getAPIData(queryparam, initialLoad) {
@@ -74,7 +86,7 @@ class DisplayList extends React.Component {
             }
           </ul>
         </div>
-        <div class="selectedFontDetails_container">
+        <div className="selectedFontDetails_container">
         { (selectedFont !== '') && (
           
           selectedFont.variants.map((elem, ind) => (

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import DisplayListContainer from '../containers/DisplayListContainer';
 import WelcomeModal from './WelcomeModal';
-import SidebarContainer from './SidebarContainer';
+import SidebarContainer from '../containers/SidebarContainer';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class AppComponent extends React.Component {

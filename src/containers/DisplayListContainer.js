@@ -7,6 +7,7 @@ const mapStateToProps = (state) => {
   // console.log(state)
   return {
     apiResponse: state.apiResponse,
+    filtersData: state.filtersData,
   };
 };
 

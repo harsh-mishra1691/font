@@ -8,6 +8,7 @@
 const configData = {
   apiUrl: 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAPfEhsv6jREaaP9kd2d9BH_k11dzHjV6c',
   modalText: 'Welcome ! We are loading fonts for you...',
+  sortbyFilter: ['Select', 'alpha', 'date', 'popularity', 'style', 'trending'],
 };
 
 export default configData;

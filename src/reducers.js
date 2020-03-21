@@ -7,7 +7,9 @@ import {
   SET_CHARACTER,
   SET_RESPONSE,
   HIDE_WELCOME_MODAL,
+  SORT_BY_FILTER,
 } from './actions';
+// import { stat } from 'fs';
 
 function widthChange(state = {}, action) {
   switch (action.type) {
@@ -54,12 +56,22 @@ function showWelcomeModal(state = true, action) {
   }
 }
 
+function filtersData(state = '', action) {
+  switch (action.type) {
+    case SORT_BY_FILTER:
+      return action.data;
+    default:
+      return state;
+  }
+}
+
 const reducers = combineReducers({
   widthChange,
   activeScreen,
   selectedCharacter,
   apiResponse,
   showWelcomeModal,
+  filtersData,
 });
 
 export default reducers;

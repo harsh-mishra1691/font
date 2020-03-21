@@ -3,6 +3,7 @@ export const WIDTH_CHANGE = 'WIDTH_CHANGE';
 export const SET_CHARACTER = 'SET_CHARACTER';
 export const SET_RESPONSE = 'SET_RESPONSE';
 export const HIDE_WELCOME_MODAL = 'HIDE_WELCOME_MODAL';
+export const SORT_BY_FILTER = 'SORT_BY_FILTER';
 
 
 export const widthChange = (data) => {
@@ -23,4 +24,8 @@ export const setResponseInStore = (data) => {
 
 export const setWelcomeModal = (data) => {
   return { type: HIDE_WELCOME_MODAL, data };
+};
+
+export const filterData = (data) => {
+  return { type: SORT_BY_FILTER, data};
 };
